@@ -18,3 +18,33 @@ var sum = function(n, m) {
 };
 // let sum = (n,m) =>n+m;
 console.log(sum(10, 20)); // 30
+
+
+
+// day1 作业
+
+/*
+  1. 变量提升
+     var a;  默认值undefined
+  2. 代码执行
+     
+*/ 
+
+console.log(a) // undefined
+var a = 12;    //=> a = 12;
+a = 13;        //=> a = 13;
+console.log(a); // 13
+
+/*
+  1. 变量提升
+  2. 代码执行
+     
+*/ 
+
+
+console.log(a); // 暂时性死区a未初始化   Cannot access 'a' before initialization
+let a = 12;
+a = 13;
+console.log(a); // 13
+
+console.log(a);
